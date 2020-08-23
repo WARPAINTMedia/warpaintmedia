@@ -1,0 +1,27 @@
+<div class="slice"></div>
+<footer id="footer" class="bg-black">
+  <div class="container">
+    <div class="clearfix p3">
+      <div id="addresses" class="sm-col-right sm-col-6">
+        <br>
+        <ul class="list-reset">
+          <li>Email us: <a title="Email Direct" href="mailto:{{ .Site.Params.Email }}?subject={{ safeURL "Hello WARPAINT Media" }}" target="_blank">{{ .Site.Params.Email }}</a></li>
+        </ul>
+      </div>
+      <div id="links" class="sm-col sm-col-6">
+        <nav id="social-nav">
+          <ul class="list-reset">
+            <li><a href="https://twitter.com/{{ .Site.Params.Twitter }}" rel="me noopener" target="_blank" title="Twitter"><i class="twitter"></i></a></li>
+            <li><a href="mailto:{{ .Site.Params.Email }}?subject={{ safeURL "Hello WARPAINT Media" }}" rel="me noopener" target="_blank" title="Email"><i class="letter"></i></a></li>
+          </a>
+          </ul>
+        </nav>
+        <nav id="footer-nav">
+          <ul class="list-reset">
+            <li role="contentinfo">&copy; 2013 - {{ now.Format "2006"}} {{ .Site.Title }}, Inc.</li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>

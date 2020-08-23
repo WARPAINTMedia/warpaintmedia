@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" class="no-touch wf-loading">
+{{- partial "head.html" . -}}
+<body>
+  <a id="skippy" class="sr-only sr-only-focusable" href="#main">
+    <div class="container">
+      <span>Skip to content</span>
+    </div>
+  </a>
+  <div id="main" role="main" tabindex="-1">
+    {{- partial "header.html" . -}}
+    {{- block "main" . }}{{- end }}
+  </div>
+  {{- partial "footer.html" . -}}
+
+  {{ $stat2 := os.Stat "/themes" }}
+  {{ if eq (printf "%v" $.Site.BaseURL) "http://localhost:1313/" }}
+    <script src="/js/script.js?{{ $stat2.Size }}"></script>
+  {{ else }}
+    <script src="/js/script.min.js?{{ $stat2.Size }}"></script>
+  {{ end }}
+</body>
+</html>

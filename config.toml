@@ -1,0 +1,29 @@
+baseURL = "https://warpaintmedia.ca/"
+languageCode = "en-us"
+title = "WARPAINT Media"
+
+theme = "warpaint"
+
+verbose = true
+verboseLog = true
+
+disableKinds = ["section", "taxonomy", "term", "taxonomyTerm"]
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[author]
+  name = "WARPAINT Media"
+  email = "hello@warpaintmedia.ca"
+
+[permalinks]
+  post = "/:title/"
+
+[params]
+  Email = "hello@warpaintmedia.ca"
+  Description = "WARPAINT Media specializes in improving customer experience through marketing, design, analytics, and development."
+  Keywords = "warpaint, media, design, development, customer, experience, user, marketing, analytics"
+  DateFormat = "January 2, 2006"
+  Twitter = "warpaintmedia"
+  GoogleSiteId = "KM-5h_iJ7JJsGeUp4ncEoYCBKft1ko1A4gBpjIzT0p4"
+  FormEndpoint = "https://hooks.zapier.com/hooks/catch/1453811/of0gx5p/"
