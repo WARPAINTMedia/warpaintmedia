@@ -10,6 +10,12 @@
   "theme_color": "#9dc808",
   "icons": [
     {
+      "src": "favicons/maskable_icon.png",
+      "sizes": "349x349",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
       "src": "favicons/android-chrome-36x36.png",
       "sizes": "36x36",
       "type": "image/png",
